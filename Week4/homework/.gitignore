@@ -1,0 +1,11 @@
+**/*-secret.json
+**/*.sh
+.env
+*/ex1-aggregatin/nodule_modules
+*/ex1-aggregatin/.env
+*/ex1-aggregatin/package-lock.json
+*/ex1-aggregatin/package.json
+*/ex2-transaction/node_modules
+*/ex2-transaction/.env
+*/ex2-transaction/package-lock.json
+*/ex2-transaction/package.json
