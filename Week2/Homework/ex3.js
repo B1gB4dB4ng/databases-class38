@@ -1,8 +1,8 @@
 export const printAuthorMentor = [
-  `SELECT a.author_name, m.name AS mentor 
-FROM authors a
-LEFT JOIN mentors m
-  ON a.mentor_id = m.id;`,
+  `SELECT a.author_name as Author, m.author_name AS mentor 
+  FROM authors a
+  JOIN authors m
+  ON m.author_no = a.mentor_id;`,
 ];
 
 export const printAuthorPaper = [

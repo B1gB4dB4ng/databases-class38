@@ -3,7 +3,6 @@ import {
   alterAuthors,
   createAuthorsTable,
   createAuthors_Papers,
-  createMentorsTable,
   createPaperTable,
 } from "./createTable.js";
 import { printAuthorMentor, printAuthorPaper } from "./ex3.js";
@@ -17,7 +16,6 @@ import {
 import {
   authorResearchPaperData,
   authorsData,
-  mentorData,
   researchPaperData,
 } from "./insert.js";
 const connection = mysql.createConnection({
@@ -43,11 +41,9 @@ connection.query("CREATE DATABASE IF NOT EXISTS researchDB", (err, result) => {
 connection.query("USE researchDB");
 
 runQuery(createAuthorsTable);
-runQuery(createMentorsTable);
 runQuery(alterAuthors);
 runQuery(createPaperTable);
 runQuery(createAuthors_Papers);
-runQuery(mentorData);
 runQuery(researchPaperData);
 runQuery(authorsData);
 runQuery(authorResearchPaperData);
